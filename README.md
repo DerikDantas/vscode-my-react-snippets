@@ -1,65 +1,40 @@
-# derik-react-snippets README
+<p align="center">
+  <h1 align="center">ReactJS Snippets</h3>
+</p>
 
-This is the README for your extension "derik-react-snippets". After writing up a brief description, we recommend including the following sections.
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/DerikOliveira.derik-react-snippets.svg?label=Visual%20Studio%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=DerikOliveira.derik-react-snippets)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/DerikOliveira.derik-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=DerikOliveira.derik-react-snippets)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/DerikOliveira.derik-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=DerikOliveira.derik-react-snippets)
 
-## Features
+## 🚀 Projeto
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Este projeto visa a disponibilização de um conjunto de Snippets ou atalhos para criação de componentes e arquivos de configuração em aplicações ReactJS que utilizo no meu dia a dia.
 
-For example if there is an image subfolder under your extension project workspace:
+## 🔧 Começando
 
-\!\[feature X\]\(images/feature-x.png\)
+### Instalação
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Para instalar uma extensão você pode executar o **Command Pallete** através do comando `Ctrl + Shift + P` ou `Cmd + Shift + P` , digitar `Install Extensions` e por fim dar um `Enter`, feito isso pesquise por **Derik React Snippets** e você vai encontrar a extensão.
 
-## Requirements
+### Linguagens Suportadas
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- TypeScript (.ts)
+- TypeScript React (.tsx)
 
-## Extension Settings
+### Snippets
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada um. O **⇥** significa a tecla `TAB`.
 
-For example:
+|                    Gatilho | Conteúdo                                                                      |
+| -------------------------: | ----------------------------------------------------------------------------- |
+|                    `rfc →` | Cria um Componente **Functional**                                             |
+|               `rfcProps →` | Cria um Componente **Functional** com **Interface**                           |
+|          `zustandCreate →` | Cria um arquivo de configuração para o **Zustand**                            |
+|     `zustandCreateImmer →` | Cria um arquivo de configuração para o **Zustand**  junto com **Immer**       |
 
-This extension contributes the following settings:
+<!-- LICENSE -->
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 📝 Licença
 
-## Known Issues
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
