@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">ReactJS Snippets</h3>
+  <h1 align="center">Meus Snippets</h3>
 </p>
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/DerikOliveira.derik-react-snippets.svg?label=Visual%20Studio%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=DerikOliveira.derik-react-snippets)
