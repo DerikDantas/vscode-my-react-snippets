@@ -1,8 +1,15 @@
 {
   "name": "derik-react-snippets",
   "displayName": "Derik React Snippets",
-  "description": "Meus Snippets favoritos",
-  "version": "1.0.0",
+  "description": "My favorite Snippets to use in my daily life. I hope you enjoy. :)",
+  "version": "1.0.1",
+  "publisher": "DerikOliveira",
+  "license": "MIT",
+  "icon": "images/react.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DerikDantas/vscode-my-react-snippets"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -13,6 +20,10 @@
     "snippets": [
       {
         "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets/snippets.code-snippets"
       }
     ]
