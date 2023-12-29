@@ -12,7 +12,7 @@
     "description": "Create ReactJS Functional Component"
   },
   "componentFunctionalProps": {
-    "prefix": "rfcProps",
+    "prefix": "rfcprops",
     "body": [
       "import React from 'react';",
       "",
