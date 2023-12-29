@@ -1,0 +1,85 @@
+{
+  "componentFunctiona": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}() {",
+      "  return <div>${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}</div>;",
+      "}",
+      ""
+    ],
+    "description": "Create ReactJS Functional Component"
+  },
+  "componentFunctionalProps": {
+    "prefix": "rfcprops",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface I${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Props {}",
+      "",
+      "export default function ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}({ }: I${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Props) {",
+      "  return <div>${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}</div>;",
+      "}",
+      ""
+    ],
+    "description": "Create ReactJS Functional Component with Props"
+  },
+  "zustandStore": {
+    "prefix": "zustandCreate",
+    "body": [
+      "import { create } from 'zustand';",
+      "",
+      "interface I${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Store {",
+      "  data: any; // TODO: Add your type data",
+      "  setData: (newData: any) => void; // TODO: Add your type data",
+      "  reset: () => void;",
+      "}",
+      "",
+      "export const use${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Store = create<I${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Store>((set, get) => {",
+      "  return {",
+      "     data: null,",
+      "",
+      "     setData(newData) {",
+      "         set((store) => ({ data: newData }))",
+      "     },",
+      "",
+      "     reset() {",
+      "         set((store) => ({ data: null }))",
+      "     }",
+      "});",
+      ""
+    ],
+    "description": "Create Zustand Store"
+  },
+  "zustandStoreImmer": {
+    "prefix": "zustandCreateImmer",
+    "body": [
+      "import { produce } from 'immer';",
+      "import { create } from 'zustand';",
+      "",
+      "interface I${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Store {",
+      "  data: any; // TODO: Add your type data",
+      "  setData: (newData: any) => void; // TODO: Add your type data",
+      "  reset: () => void;",
+      "}",
+      "",
+      "export const use${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Store = create<I${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Store>((set, get) => {",
+      "  const setState = (fn: (state: I${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}Store) => void) => set(produce(fn));",
+      "",
+      "  return {",
+      "     data: null,",
+      "",
+      "     setData(newData) {",
+      "         setState((state) => { data = newData })",
+      "     },",
+      "",
+      "     reset() {",
+      "         setState((state) => { data = null })",
+      "     }",
+      "});",
+      ""
+    ],
+    "description": "Create Zustand Store With Immer"
+  }
+}

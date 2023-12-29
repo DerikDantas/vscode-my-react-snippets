@@ -1,0 +1,20 @@
+{
+  "name": "derik-react-snippets",
+  "displayName": "Derik React Snippets",
+  "description": "Meus Snippets favoritos",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
